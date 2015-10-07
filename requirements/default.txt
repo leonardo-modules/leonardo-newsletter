@@ -1,1 +1,1 @@
-https://github.com/michaelkuty/emencia-django-newsletter/zipball/master#egg=emencia.django.newsletter
+-e git+https://github.com/michaelkuty/emencia-django-newsletter.git#egg=emencia.django.newsletter
