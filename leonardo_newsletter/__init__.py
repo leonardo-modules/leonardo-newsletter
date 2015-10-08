@@ -12,6 +12,8 @@ LEONARDO_APPS = [
     'tagging'
 ]
 
+LEONARDO_OPTGROUP = 'Newsletter'
+
 LEONARDO_WIDGETS = [SubscriptionFormWidget]
 
 LEONARDO_PLUGINS = [
