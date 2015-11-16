@@ -30,7 +30,7 @@ Installation
 
 .. code-block:: bash
 
-    pip install leonardo-newsletter
+    pip install --process-dependency-links leonardo-newsletter
 
 Read More
 =========

@@ -1,2 +1,0 @@
-django-tagging==0.4
--e git+https://github.com/michaelkuty/emencia-django-newsletter.git#egg=emencia.django.newsletter
