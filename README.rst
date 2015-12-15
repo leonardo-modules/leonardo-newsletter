@@ -32,6 +32,8 @@ Installation
 
     pip install --process-dependency-links leonardo-newsletter
 
+Add External Application to any url.
+
 Read More
 =========
 
