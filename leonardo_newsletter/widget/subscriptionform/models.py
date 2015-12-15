@@ -88,13 +88,19 @@ class SubscriptionFormWidget(Widget):
         else:
             # use default layout
             form.helper.layout = Layout(
-                Fieldset(self.title or ' '),
                 ButtonHolder(
-                    Submit('submit', _('Subscribe'), css_class='button white')
+                    FieldWithButtons(Field('email', placeholder=_('Email')),
+                                     Submit('submit', _('Subscribe'),
+                                            css_class='btn-default'))
                 )
             )
-            for field in form.fields:
-                form.helper.layout[0].append(field)
+
+            # we must append mailing list fields
+            layout = form.helper.layout
+            for field in form.hidden_fields():
+                layout.append(Field(field.name, placeholder=field.label))
+
+            form.helper.form_show_labels = False
 
         context.update({
             'object': self.mailing_list,
