@@ -31,7 +31,9 @@ class SubscriptionFormWidget(Widget):
     show_description = models.BooleanField(_('show description'), default=True,
                                            help_text=_('Show the mailing list\'s description.'))
     mailing_list = models.ForeignKey(MailingList, verbose_name=_('mailing list'),
-                                     help_text=_('Mailing List to subscribe to.'))
+                                     help_text=_(
+                                         'Mailing List to subscribe to.'),
+                                     blank=True, null=True)
     just_email = models.BooleanField(_('Show just email'), default=False,
                                      help_text=_('Show just email input.'))
     subscribe_all = models.BooleanField(_('Subscribe all mailing lists'), default=False,
