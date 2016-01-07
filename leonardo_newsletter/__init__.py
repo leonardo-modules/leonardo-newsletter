@@ -1,8 +1,6 @@
 
 from django.apps import AppConfig
 
-from .widget import *
-
 default_app_config = 'leonardo_newsletter.Config'
 
 
@@ -14,7 +12,9 @@ LEONARDO_APPS = [
 
 LEONARDO_OPTGROUP = 'Newsletter'
 
-LEONARDO_WIDGETS = [SubscriptionFormWidget]
+LEONARDO_WIDGETS = [
+    'leonardo_newsletter.widget.subscriptionform.models.SubscriptionFormWidget'
+]
 
 LEONARDO_PLUGINS = [
     ('leonardo_newsletter.apps.newsletter', 'Newsletter Mailing Lists'),

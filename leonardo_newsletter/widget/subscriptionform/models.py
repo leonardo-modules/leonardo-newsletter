@@ -9,7 +9,7 @@ from emencia.django.newsletter.forms import (AllMailingListSubscriptionForm,
                                              MailingListSubscriptionForm)
 from emencia.django.newsletter.models import MailingList
 from leonardo import messages
-from leonardo.models import Widget
+from leonardo.module.web.models import Widget
 
 
 class EmailSubscriptionForm(MailingListSubscriptionForm):
