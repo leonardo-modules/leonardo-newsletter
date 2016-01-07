@@ -13,7 +13,7 @@ LEONARDO_APPS = [
 LEONARDO_OPTGROUP = 'Newsletter'
 
 LEONARDO_WIDGETS = [
-    'leonardo_newsletter.widget.subscriptionform.models.SubscriptionFormWidget'
+    'leonardo_newsletter.models.SubscriptionFormWidget'
 ]
 
 LEONARDO_PLUGINS = [
