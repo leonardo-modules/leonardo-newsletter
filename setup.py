@@ -10,5 +10,4 @@ except ImportError:
 
 setuptools.setup(
     setup_requires=['pbr'],
-    pbr=True,
-    dependency_links=['http://github.com/michaelkuty/emencia-django-newsletter/tarball/master#egg=emencia_django_newsletter-0.4'])
+    pbr=True)

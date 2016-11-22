@@ -20,6 +20,11 @@ LEONARDO_PLUGINS = [
     ('leonardo_newsletter.apps.newsletter', 'Newsletter Mailing Lists'),
 ]
 
+LEONARDO_REQUIREMENTS = [
+    "http://github.com/michaelkuty/emencia-django-newsletter"
+    "/archive/master.zip#emencia_django_newsletter==0.4.5"
+]
+
 
 class Config(AppConfig):
     name = 'leonardo_newsletter'
