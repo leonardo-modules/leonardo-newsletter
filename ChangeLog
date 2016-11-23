@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+0.0.4
+-----
+
+* Move deps to leonardo requirements
+* Shorthand widget path
+* Changelog update
+
 0.0.3
 -----
 
@@ -18,8 +25,4 @@ CHANGES
 * add meta
 * cleanup
 * provide celery task `send_newsletter`
-
-0.0.1
------
-
 * Initial commit
